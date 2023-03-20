@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     'nuxt-icon', // https://icones.js.org
     '@vite-pwa/nuxt',
     'nuxt-gtag',
+    '@nuxt/devtools',
   ],
   vite: {
     define: {
