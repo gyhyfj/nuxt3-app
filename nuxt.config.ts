@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxt/test-utils/module',
     '@nuxtjs/color-mode',
+    'shadcn-nuxt',
   ],
   icon: {
     customCollections: [
@@ -23,7 +24,13 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'light', // or 'dark' or 'system' or 'no-preference'
     fallback: 'light',
+    classPrefix: '',
+    classSuffix: '',
     storage: 'cookie', // or 'sessionStorage' or 'cookie'
     storageKey: 'nuxt-color-mode',
+  },
+  shadcn: {
+    prefix: '',
+    componentDir: './components/shadcn',
   },
 })
